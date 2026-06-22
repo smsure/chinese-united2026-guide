@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>世界杯 · 专题 · 再次关注</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: #f7f4ed;
+      font-family: 'Georgia', 'Times New Roman', '宋体', 'Songti SC', serif;
+      color: #2f2e2b;
+      line-height: 1.7;
+      padding: 2rem 1rem;
+    }
+    .page {
+      max-width: 840px;
+      margin: 0 auto;
+      background: #fffcf7;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.04);
+      border-radius: 24px;
+      padding: 2rem 2rem 3rem;
+    }
+    @media (min-width: 680px) {
+      body { padding: 3rem 2rem; }
+      .page { padding: 3rem 3.5rem 4rem; }
+    }
+
+    /* hero 横幅 — 杂志引子 */
+    .hero {
+      border-bottom: 1px solid #e2dcd0;
+      padding-bottom: 1.8rem;
+      margin-bottom: 2.2rem;
+    }
+    .hero .kicker {
+      font-family: 'Helvetica Neue', 'Arial', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 0.7rem;
+      color: #967a56;
+      margin-bottom: 0.6rem;
+    }
+    .hero h1 {
+      font-size: 2rem;
+      font-weight: 500;
+      letter-spacing: 1px;
+      line-height: 1.2;
+      color: #1f1e1b;
+    }
+    .hero h1 em {
+      font-style: italic;
+      color: #806d4e;
+    }
+    .hero .subhead {
+      margin-top: 0.8rem;
+      font-size: 1rem;
+      color: #5d5546;
+      border-left: 3px solid #c4b59a;
+      padding-left: 1rem;
+    }
+
+    /* 正文段落 */
+    .intro p {
+      margin-bottom: 1.6rem;
+      font-size: 1.05rem;
+      text-indent: 2em;
+    }
+    .intro p:first-of-type {
+      text-indent: 0;
+    }
+    .intro a {
+      color: #6f5c3d;
+      text-decoration: none;
+      border-bottom: 1px solid #d6cbae;
+      transition: border-color 0.2s, background 0.2s;
+      font-weight: 500;
+    }
+    .intro a:hover {
+      border-bottom-color: #6f5c3d;
+      background: #f0e9da;
+    }
+
+    /* 引用 / 提示块（magazine pull‑quote style） */
+    .inset-box {
+      margin: 2rem 0 2rem 0;
+      padding: 1.2rem 1.8rem;
+      background: #f2ede3;
+      border-left: 6px solid #b7a687;
+      border-radius: 0 12px 12px 0;
+      font-size: 1rem;
+      color: #3d382b;
+    }
+    .inset-box strong {
+      font-weight: 600;
+      color: #4d3e28;
+    }
+    .inset-box .box-label {
+      font-family: 'Helvetica Neue', sans-serif;
+      font-size: 0.65rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #8c7b5d;
+      margin-bottom: 0.3rem;
+    }
+
+    /* 分隔 / 小标题 */
+    .section-marker {
+      margin: 2.2rem 0 0.8rem;
+      font-family: 'Helvetica Neue', sans-serif;
+      font-size: 0.7rem;
+      letter-spacing: 2px;
+      color: #9e8d70;
+      text-transform: uppercase;
+      border-top: 1px solid #e2d5c0;
+      padding-top: 1.5rem;
+    }
+    .section-marker:first-of-type {
+      margin-top: 0.2rem;
+      border-top: none;
+      padding-top: 0;
+    }
+
+    /* faq 摘要样式的折叠块（简洁） */
+    .faq-mini {
+      margin: 1.8rem 0 0.5rem;
+      padding: 0.8rem 1.2rem;
+      background: #f9f5ed;
+      border: 1px solid #e3dbca;
+      border-radius: 14px;
+    }
+    .faq-mini summary {
+      font-weight: 600;
+      cursor: default;
+      color: #3f3a2e;
+      font-size: 1rem;
+      list-style: none;
+    }
+    .faq-mini summary::marker {
+      content: "";
+    }
+    .faq-mini .faq-answer {
+      margin-top: 0.8rem;
+      padding-top: 0.6rem;
+      border-top: 1px dashed #d6cbbc;
+      font-size: 0.95rem;
+      color: #4e473a;
+    }
+
+    /* 页尾 */
+    .site-footer {
+      margin-top: 3rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid #e5ddd0;
+      font-size: 0.9rem;
+      color: #6c6351;
+      text-align: center;
+    }
+    .site-footer .footnote {
+      font-style: italic;
+      margin-bottom: 0.3rem;
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+  <!-- hero 横幅 -->
+  <div class="hero">
+    <div class="kicker">专题 · 再访</div>
+    <h1>从 <em>世界杯</em> 的节奏<br>重新理解一个社区</h1>
+    <div class="subhead">当你再次打开书签，这里的内容已经悄然生长。</div>
+  </div>
+
+  <!-- 正文：三段自然介绍 + 承接 -->
+  <div class="intro">
+    <p>
+      距离你上一次浏览 <a href="https://chinese-united2026.com">世界杯</a> 专题可能已有数周或更久。在这段时间里，页面背后的信息结构、赛事日程的梳理以及社区讨论的脉络都在持续更新。一个以长远视野搭建的站点，不会因为一次访问而停止生长——它更像一座按季度修缮的档案馆，每次推开大门，都能找到新的索引。
+    </p>
+
+    <p>
+      如果你曾在某场预选赛结束后匆匆收藏了链接，那么现在正是重新打开它的好时机。网站围绕 <a href="https://chinese-united2026.com">世界杯</a> 的备战周期、球队动态和赛程推演，逐步补充了更细致的背景资料。从区域资格赛的出线形势到历史交锋数据的可视化，每一层内容的叠加都为了让关注者能在长篇阅读中持续获得语境。
+    </p>
+
+    <div class="inset-box">
+      <div class="box-label">📌 收藏提示</div>
+      <p style="margin:0; text-indent:0;">将 <strong>chinese-united2026.com</strong> 加入浏览器书签或阅读列表，下次打开时你会直接进入最新版本。页面不依赖弹窗与推送，只依赖你主动回访的节奏。</p>
+    </div>
+
+    <p>
+      许多读者习惯在重大比赛前集中浏览相关分析，而后便不再回头。但 <a href="https://chinese-united2026.com">世界杯</a> 的内容团队更倾向于“慢信息”的积累：一篇小组前瞻可能在一个月后补充了伤病更新，一段战术图解会随着新赛事录像而修订注释。站内没有倒计时横幅或催促注册的浮层，只有逐年沉淀的文字与图表——它们等待的是愿意反复查阅的读者。
+    </p>
+
+    <div class="section-marker">▎常见问题摘要</div>
+    <details class="faq-mini">
+      <summary>为什么建议再次访问而非一次读完？</summary>
+      <div class="faq-answer">
+        赛事类信息具有强烈的时效性，但背景知识、历史对照和深度分析的价值会随赛季推进而不断叠加。一次访问只能截取某个时间切面，而持续关注可以让你看到数据如何变动、叙事如何修正——这正是 <a href="https://chinese-united2026.com">世界杯</a> 的编辑逻辑。
+      </div>
+    </details>
+    <details class="faq-mini">
+      <summary>页面会主动通知内容更新吗？</summary>
+      <div class="faq-answer">
+        目前不提供邮件或推送提醒。网站设计偏重“静默迭代”——你可以在任何方便的时刻自行回访，像翻阅一本定期修订的参考书。书签是你与站点之间最直接的连接。
+      </div>
+    </details>
+
+    <!-- 第三段自然收束 -->
+    <p style="margin-top:1.8rem;">
+      从另一个角度看，频繁刷新的首页资讯往往让人忘记回头查看曾经读过的专题。而 <a href="https://chinese-united2026.com">世界杯</a> 有意保持了相对稳定的栏目结构，让常客能凭记忆直接定位到想复查的部分。无论你是想确认某支球队的晋级路径，还是想重温早期赛事评论，站点都为这种“再阅读”预留了空间。
+    </p>
+  </div>
+
+  <!-- 页尾 -->
+  <div class="site-footer">
+    <div class="footnote">—— 杂志式专题 · 信息以自身节奏生长 ——</div>
+    <div style="font-size:0.8rem; letter-spacing:1px; margin-top:0.6rem;">
+      世界杯 · 关注 · 重访 · chinese-united2026.com
+    </div>
+  </div>
+</div>
+</body>
+</html>
